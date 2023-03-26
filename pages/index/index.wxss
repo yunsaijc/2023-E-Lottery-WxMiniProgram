@@ -17,3 +17,11 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  /* border: 1rpx solid #ccc; */
+  /* margin: 20rpx; */
+  /* border-radius: 20rpx; */
+}

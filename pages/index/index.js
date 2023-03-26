@@ -60,7 +60,7 @@ Page({
   },
   login(){
     wx.request({
-      url: 'http://192.168.43.4:8000/api/login/',
+      url: app.globalData.targetURL + 'login/',
       method: "POST",
           header:{
             "content-type": "application/x-www-form-urlencoded"		//使用POST方法要带上这个header
