@@ -1,106 +1,109 @@
-// index.js
-// 获取应用实例
-const app = getApp()
-
+// pages/index/index.js
+const app = getApp();
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName'), // 如需尝试获取用户信息可改为false
-    username: "",
-    password: "",
-    result: {}
+    lotteries: {}
   },
-  // 事件处理函数
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  onCreate() {
+    wx.switchTab({
+      url: '/pages/create/create',
     })
   },
-  onLoad() {
-    if (wx.getUserProfile) {
-      this.setData({
-        canIUseGetUserProfile: true
-      })
-    }
+  onMyLot() {
+    wx.switchTab({
+      url: '/pages/myLottery/myLottery',
+    })
   },
-  getUserProfile(e) {
-    // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-    wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        console.log(res)
+  onItem(e) {
+    // console.log(e)
+    wx.navigateTo({
+      url: '../detail/detail?lotteryName=' + e.currentTarget.dataset.item.fields.lotteryname,
+      success: (result) => {},
+      fail: (res) => {},
+      complete: (res) => {
+        // console.log(res)
+      },
+    })
+  },
+  update() {
+    wx.request({
+      url: app.globalData.targetURL + 'update/',
+      method: 'GET',
+      success: res => {
+        // console.log(res)
         this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
+          lotteries: res.data.data
         })
       }
     })
   },
-  getUserInfo(e) {
-    // 不推荐使用getUserInfo获取用户信息，预计自2021年4月13日起，getUserInfo将不再弹出弹窗，并直接返回匿名的用户个人信息
-    console.log(e)
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
+    this.update()
+    // console.log(this.lotteries)
   },
-  onUsername(e){
-    this.setData({
-      username: e.detail.value
-    })
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
+
   },
-  onPassword(e){
-    this.setData({
-      password: e.detail.value
-    })
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
+
   },
-  login(){
-    wx.request({
-      url: app.globalData.targetURL + 'login/',
-      method: "POST",
-          header:{
-            "content-type": "application/x-www-form-urlencoded"		//使用POST方法要带上这个header
-          },
-          data: {
-            username: this.username,
-            password: this.password,
-          },
-          success: res => {
-            if (res.errno == 0) {
-              console.log(res)
-              this.setData({
-                result: res.data	//服务器返回的结果 
-              })    
-            }
-          },
-          complete: res => {
-            console.log(res)
-          },
-    })
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
+
   },
-  register(){
-    wx.request({
-      url: 'http://192.168.43.4:8000/api/register/',
-      method: "POST",
-          header:{
-            "content-type": "application/x-www-form-urlencoded"		//使用POST方法要带上这个header
-          },
-          data: {
-            username: this.username,
-            password: this.password,
-          },
-          success: res => {
-            if (res.errno == 0) {
-              console.log(res)
-              this.setData({
-                result: res.data	//服务器返回的结果 
-              })    
-            }
-          },
-    })
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
+
   },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
+    wx.showNavigationBarLoading()
+    wx.showLoading({
+      title: '刷新中...',
+    })
+    this.update()
+    setTimeout(function () {
+      wx.hideLoading();
+      wx.hideNavigationBarLoading();
+      wx.stopPullDownRefresh();
+    }, 2000)
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
+  }
 })

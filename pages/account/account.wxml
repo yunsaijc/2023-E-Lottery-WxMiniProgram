@@ -1,0 +1,19 @@
+<!--pages/account/account.wxml-->
+<view class='container'>
+    <!-- <view class="list"> -->
+        <view class="">
+          <view class="titleIconView"><image class="titleIconImage" src="../../images/logo.png"></image>
+          </view>
+          <view class="rowButton" wx:if="{{!isLogin}}">
+              <button bindtap="onLogin" class="rowButtonItem">登录/注册
+              </button>
+              <!-- <navigator url="pages/login/login" open-type="navigate" hover-class="none" class="">登录
+              </navigator> -->
+          </view>
+          <view class="greetLabel" wx:else="">
+            <view>Hi, {{username}}!
+            </view>
+          </view>
+        </view>
+    <!-- </view> -->
+</view>

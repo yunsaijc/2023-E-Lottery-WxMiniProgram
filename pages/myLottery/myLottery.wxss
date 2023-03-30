@@ -1,56 +1,9 @@
-/* pages/index/index.wxss */
-.rowTitle{
-  top: 50rpx;
-  height: 150rpx;
-  left: 30rpx;
-  /* width: auto; */
-  bottom: 0;
-  position: absolute;
-}
-.titleView{
-  top: 70rpx;
-  left: 90rpx;
-  right: 200rpx;
-  height: 120rpx;
-  position: absolute;
-}
-.titleText {
-  color: rgb(32, 27, 27);
-  font-size: 70rpx;
-  white-space: nowrap;
-    text-overflow:ellipsis;
-}
-.titleIconView{
-  top: 70rpx;
-  left: 500rpx;
-  right: 70rpx;
-  height: 30rpx;
-  position: absolute;
-}
-.titleIconImage {
-  width: 150rpx;
-  height: 150rpx;
-}
-
-.rowButton {
-  top: 320rpx;
-  height: 100rpx;
-  width: auto;
-  position: absolute;
-}
-.rowButtonItem {
-  margin: 20rpx;
-  background-color: rgb(209, 209, 209);
-  color: rgb(32, 27, 27);
-  font-size: 30rpx;
-  white-space: nowrap;
-  text-overflow:ellipsis;
-}
+/* pages/myLottery/myLottery.wxss */
 
 .list {
   width: 100%;
   bottom: 0;
-  top: 500rpx;
+  top: 50rpx;
   /* background-color: red; */
   position: absolute;
 }

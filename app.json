@@ -1,13 +1,50 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/login/login",
+    "pages/account/account",
+    "pages/logs/logs",
+    "pages/create/create",
+    "pages/myLottery/myLottery",
+    "pages/detail/detail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "E-Lottery",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#f26604",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabs/index-off.png",
+        "selectedIconPath": "images/tabs/index-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/create/create",
+        "iconPath": "images/tabs/create-off.png",
+        "selectedIconPath": "images/tabs/create-on.png",
+        "text": "新建"
+      },
+      {
+        "pagePath": "pages/myLottery/myLottery",
+        "iconPath": "images/tabs/myLottery-off.png",
+        "selectedIconPath": "images/tabs/myLottery-on.png",
+        "text": "已参加"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "iconPath": "images/tabs/account-off.png",
+        "selectedIconPath": "images/tabs/account-on.png",
+        "text": "我的"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

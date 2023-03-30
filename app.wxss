@@ -8,3 +8,11 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.row {
+  display: flex;
+  flex-direction: row;
+  /* border: 1rpx solid #ccc; */
+  /* margin: 20rpx; */
+  /* border-radius: 20rpx; */
+}

@@ -1,0 +1,18 @@
+<!--pages/myLottery/myLottery.wxml-->
+<view class='container'>
+  <view class="list">
+    <block wx:for="{{lotteries}}">
+      <view class='item' wx:key="{{item.ID}}" bindtap='onItem' data-item= "{{item}}" data-id="{{item.ID}}">
+        <view class='lotteryNameView'>
+          <text class='lotteryNameText'>{{item.fields.lotteryname}}</text>
+        </view>
+        <view class='founderView'>
+          <text class = 'founderText'>创建者：{{item.fields.founder}}</text>
+        </view>
+        <view class='stopTimeView'>
+          <text class='stopTimeText'>截止时间：{{item.fields.stoptime}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

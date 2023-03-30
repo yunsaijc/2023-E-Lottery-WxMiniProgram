@@ -1,29 +1,35 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <image src="../../images/logo.png" style="width:70px" mode="widthFix"></image>
-      <view>Welcome to E-Lottery</view>
+<view class='container'>
+  <view class="rowTitle">
+    <view class="titleView">
+      <view class="titleText">E-Lottery
+      </view>
+    </view>
+    <view class="titleIconView">
+        <image class="titleIconImage" src="../../images/logo.png" style="width:70px" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="rowButton">
+    <button class="rowButtonItem" size="mini" bind:tap="onCreate">创建新摇号</button>
+    <button class="rowButtonItem" size="mini" bind:tap="onMyLot">查看已报名摇号</button>
+    <!-- <button class="" size="mini" bind:tap="onUpdate">刷新</button> -->
+  </view>
+  <view class="list">
+    <block wx:for="{{lotteries}}">
+      <view class='item' wx:key="{{item.ID}}" bindtap='onItem' data-item= "{{item}}" data-id="{{item.ID}}">
+        <!-- <view class='iconImageView'>
+          <image class='iconImage' src="{{item.pic}}" mode = 'aspectFit'></image>
+        </view> -->
+        <view class='lotteryNameView'>
+          <text class='lotteryNameText'>{{item.fields.lotteryname}}</text>
+        </view>
+        <view class='founderView'>
+          <text class = 'founderText'>创建者：{{item.fields.founder}}</text>
+        </view>
+        <view class='stopTimeView'>
+          <text class='stopTimeText'>截止时间：{{item.fields.stoptime}}</text>
+        </view>
+      </view>
     </block>
-  </view>
-  <view class="page-section">
-    <view class="weui-cells__title">用户名</view>
-    <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell weui-cell_input">
-        <input class="weui-input" type="number" placeholder="请输入您的用户名" bind:input="onUsername"/>
-      </view>
-    </view>
-  </view>
-  <view class="page-section">
-    <view class="weui-cells__title">密码</view>
-    <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell weui-cell_input">
-        <input class="weui-input" password type="text" placeholder="请输入您的密码" bind:input="onPassword"/>
-      </view>
-    </view>
-  </view>
-  <view class="row">
-    <button class="mini-btn" type="primary" size="mini" bind:tap="login" bind>登录</button>
-    <button class="mini-btn" type="default" size="mini" bind:tap="register">注册</button>
   </view>
 </view>

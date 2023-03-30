@@ -1,0 +1,69 @@
+/* pages/detail/detail.wxss */
+/* pages/create/create.wxss */
+.formList {
+  flex: column;
+  width: 100%;
+  top: 60rpx;
+  position: absolute;
+}
+.formItem {
+  border-top: 0.5px solid #dadada;
+  border-bottom: 0.5px solid #dadada;
+  height: 90rpx;
+  position: relative;
+}
+
+/* .labelView {
+  width: 200rpx;
+  left: 50rpx;
+  right: 300rpx;
+  position: absolute;
+} */
+.label {
+  width: 200rpx;
+  left: 50rpx;
+  right: 300rpx;
+  position: absolute;
+}
+
+/* .inputView {
+  left: 200rpx;
+  position: absolute;
+} */
+.input {
+  left: 250rpx;
+  position: absolute;
+}
+
+.warnView {
+  top: 500rpx;
+  left: 20rpx;
+  right: 20rpx;
+  height: 100rpx;
+  width: auto;
+  position: absolute;
+}
+.warnView {
+  top: 370rpx;
+  left: 20rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+  color: rgb(221, 185, 92);
+  width: auto;
+}
+
+.rowButton {
+  top: 500rpx;
+  left: 160rpx;
+  height: 100rpx;
+  width: auto;
+  position: absolute;
+}
+.button {
+  margin: 20rpx;
+  background-color: rgb(209, 209, 209);
+  color: rgb(32, 27, 27);
+  font-size: 40rpx;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
