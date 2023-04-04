@@ -4,6 +4,12 @@ Page({
     data: {
         isLogin: app.globalData.userInfo
     },
+    logOut() {
+      app.globalData.userInfo = null
+      app.globalData.userName = ""
+      app.onLaunch()
+      this.onShow()
+    },
     onLogin() {
       wx.navigateTo({
         url: '../login/login',

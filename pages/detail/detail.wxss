@@ -87,7 +87,7 @@ inputView {
   height: 200rpx;
   left: 155rpx;
   width: auto;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .button {

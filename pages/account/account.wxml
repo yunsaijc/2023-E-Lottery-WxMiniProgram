@@ -11,5 +11,9 @@
       <view>Hi, {{username}}!
       </view>
     </view>
+    <view class="rowButton" wx:if="{{isLogin}}">
+      <button bindtap="logOut" class="button">退出登录
+      </button>
+    </view>
   </view>
 </view>

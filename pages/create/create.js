@@ -16,7 +16,21 @@ Page({
     })
   },
   submit(e){
-    console.log(e);
+    if (!app.globalData.userInfo){
+      wx.showModal({
+        content: '需要登录！',
+        editable: false,
+        title: '提示',
+        success: res => {
+          if (res.confirm) { //点击了确认
+            wx.navigateTo({
+              url: '../login/login',
+            })
+          }
+        }
+      })
+    }
+    // console.log(e);
     wx.request({
       url: app.globalData.targetURL + 'createlot/',
       method: 'POST',
@@ -26,10 +40,11 @@ Page({
       data :{
         lotteryName: e.detail.value.lotteryName,
         founder: e.detail.value.founder,
+        res_num: e.detail.value.res_num,
         stopTime: e.detail.value.stopDate + ' ' + e.detail.value.stopTime
       },
       success: res => {
-        // console.log(res)
+        console.log(res)
         wx.showModal({
           content: res.data.msg,
           editable: false,

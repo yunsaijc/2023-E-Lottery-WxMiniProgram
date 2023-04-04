@@ -13,6 +13,10 @@
       <view class="label">发起人</view>
       <input class="input" type="text" id="founder" name="founder" placeholder="请输入发起人" />
     </view>
+    <view class="formItem">
+        <view class="label">结果数量</view>
+        <input class="input" type="text" id="res_num" name="res_num" placeholder="请输入结果数量"/>
+    </view>
     <picker class="formItem" mode="date" bindchange="dateChange" value="{{stopDate}}">
       <view class="label">截止日期</view>
       <input class="input" id="stopDate" name="stopDate" value='{{stopDate}}' placeholder='选择截止日期' />
