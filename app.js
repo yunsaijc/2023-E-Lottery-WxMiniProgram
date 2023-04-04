@@ -17,6 +17,6 @@ App({
     userInfo: null,
     userName: "",
     targetURL: 'http://127.0.0.1:8000/api/',
-    // targetURL:'http://192.168.43.4:8000/api/',
+    // targetURL: 'http://192.168.43.34:8000/api/',
   }
 })

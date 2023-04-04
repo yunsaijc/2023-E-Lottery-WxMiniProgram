@@ -1,25 +1,43 @@
 <!--pages/detail/detail.wxml-->
 <form bindsubmit="submit">
+  <view class="titleIconView">
+    <image class="titleIconImage" src="../../images/tabs/bgdetail.png">
+    </image>
+  </view>
   <view class="formList">
     <view class="formItem">
-        <view class="label">摇号名</view>
-        <view class="input">{{lot.fields.lotteryname}}</view>
+      <view class="label">摇号名</view>
+      <view class="input">{{lot.fields.lotteryname}}</view>
     </view>
     <view class="formItem">
-        <view class="label">发起人</view>
-        <view class="input">{{lot.fields.founder}}</view>
+      <view class="label">发起人</view>
+      <view class="input">{{lot.fields.founder}}</view>
     </view>
     <picker class="formItem" mode="date" bindchange="dateChange" value="{{stopDate}}">
       <view class="label">截止时间</view>
-      <input class="input" value='{{lot.fields.stoptime}}'/>
+      <input class="input" value='{{lot.fields.stoptime}}' />
     </picker>
   </view>
+
+  <view class="formListPic">
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/label1.png" mode="aspectFill"></image>
+    </view>
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/label2.png" mode="aspectFill"></image>
+    </view>
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/label3.png" mode="aspectFill"></image>
+    </view>>
+  </view>
+
   <view class="warnView">
     <view class="warnLabel">点击报名后，请输入一个数字来参与到摇号中。若不输入，我们会为您生成一个随机输入。
     </view>
   </view>
+
   <view class="rowButton">
-    <button formType="submit" class="button">{{labelText}}
+    <button formType="submit" class="button">返回主界面
     </button>
   </view>
 </form>

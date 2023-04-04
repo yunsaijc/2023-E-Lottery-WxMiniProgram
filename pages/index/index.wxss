@@ -1,50 +1,80 @@
 /* pages/index/index.wxss */
+.picture {
+  width: 25px;
+  height: 25px;
+  /* width: 200rpx; */
+  left: 100rpx;
+  /* right: 300rpx; */
+  position: absolute;
+}
+
+.titleIconView {
+  top: -100rpx;
+  left: 0rpx;
+  right: 0rpx;
+  height: 30rpx;
+  position: absolute;
+}
+
+.titleIconImage {
+  width: 750rpx;
+  height: 1350rpx;
+}
+
+/* 
 .rowTitle{
-  top: 50rpx;
-  height: 150rpx;
-  left: 30rpx;
-  /* width: auto; */
+  top: 105rpx;
+  height: 170rpx;
+  left: 140rpx;
   bottom: 0;
   position: absolute;
 }
 .titleView{
-  top: 70rpx;
-  left: 90rpx;
+  top: 400rpx;
+  left: 35rpx;
   right: 200rpx;
   height: 120rpx;
   position: absolute;
 }
 .titleText {
-  color: rgb(32, 27, 27);
-  font-size: 70rpx;
+  color: rgb(255, 255, 255);
+  font-size: 130rpx;
+  font-weight: 400;
   white-space: nowrap;
-    text-overflow:ellipsis;
+  font-family:YouYuan;
+  text-shadow: 0px 0px 8px rgb(0, 0, 0);
 }
 .titleIconView{
-  top: 70rpx;
-  left: 500rpx;
+  top:-530rpx;
+  left: 150rpx;
   right: 70rpx;
-  height: 30rpx;
+  height: 20rpx;
   position: absolute;
 }
 .titleIconImage {
-  width: 150rpx;
-  height: 150rpx;
-}
+  top: 570rpx;
+  width: 500rpx;
+  height: 300rpx;
+  position: absolute;
+} */
 
 .rowButton {
-  top: 320rpx;
-  height: 100rpx;
-  width: auto;
+  top: 900rpx;
+  height: 200rpx;
   position: absolute;
+
 }
+
 .rowButtonItem {
+  border-radius: 30px;
   margin: 20rpx;
-  background-color: rgb(209, 209, 209);
-  color: rgb(32, 27, 27);
-  font-size: 30rpx;
+  background-color: rgba(255, 255, 255, 255);
+  color: rgb(36, 80, 120, 0.6);
+  font-size: 20rpx;
   white-space: nowrap;
-  text-overflow:ellipsis;
+  font: weight 1;
+  /* text-overflow:ellipsis; */
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
 }
 
 .list {
@@ -54,26 +84,28 @@
   /* background-color: red; */
   position: absolute;
 }
+
 .item {
   width: 100%;
   height: 300rpx;
   position: relative;
   /* background-color: green; */
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #831515;
 }
 
-.lotteryNameView{
+.lotteryNameView {
   top: 70rpx;
   left: 90rpx;
   /* right: 130rpx; */
   height: 30rpx;
   position: absolute;
 }
+
 .lotteryNameText {
   color: rgb(32, 27, 27);
   font-size: 42rpx;
   white-space: nowrap;
-    text-overflow:ellipsis;
+  text-overflow: ellipsis;
 }
 
 .founderView {
@@ -84,15 +116,16 @@
   /* background-color: gray; */
   position: absolute;
 }
+
 .founderText {
   font-size: 30rpx;
   color: gray;
   display: block;
   /* line-height: 50rpx; */
-   overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-   /* -webkit-line-clamp:1;  */
+  /* -webkit-line-clamp:1;  */
 }
 
 .stopTimeView {
@@ -100,12 +133,13 @@
   height: 50rpx;
   left: 90rpx;
   right: 150rpx;
-  position:absolute;
+  position: absolute;
 }
+
 .stopTimeText {
   font-size: 25rpx;
-  color: rgb(221, 185, 92);
-   overflow: hidden;
+  color: rgb(31, 24, 7);
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }

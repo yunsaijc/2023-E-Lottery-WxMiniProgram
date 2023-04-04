@@ -1,29 +1,32 @@
 <!--login.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <block>
-      <image src="../../images/logo.png" style="width:70px" mode="widthFix"></image>
-      <view>Welcome to E-Lottery</view>
-    </block>
+  <view class="titleIconView">
+    <image class="titleIconImage" src="../../images/tabs/bglogin.png">
+    </image>
   </view>
-  <view class="page-section">
-    <view class="weui-cells__title">用户名</view>
-    <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell weui-cell_input">
-        <input class="weui-input" type="number" placeholder="请输入您的用户名" bind:input="onUsername"/>
-      </view>
+
+  <view class="section">
+    <view class="page-section">
+      <view class="weui-cells__title">用户名</view>
+      <input class="weui-input" type="number" placeholder="请输入您的用户名" bind:input="onUsername" />
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">密码</view>
+      <input class="weui-input" password type="text" placeholder="请输入您的密码" bind:input="onPassword" />
     </view>
   </view>
-  <view class="page-section">
-    <view class="weui-cells__title">密码</view>
-    <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell weui-cell_input">
-        <input class="weui-input" password type="text" placeholder="请输入您的密码" bind:input="onPassword"/>
-      </view>
+
+  <view class="formListPic">
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/user.png" mode="aspectFill"></image>
+    </view>
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/passwd.png" mode="aspectFill"></image>
     </view>
   </view>
+
   <view class="row">
-    <button class="mini-btn" type="default" size="mini" bind:tap="register">注册</button>
-    <button class="mini-btn" type="primary" size="mini" bind:tap="login" bind>登录</button>
+    <button class="mini-btn" size="mini" bind:tap="register">注册</button>
+    <button class="mini-btn" size="mini" bind:tap="login" bind>登录</button>
   </view>
 </view>

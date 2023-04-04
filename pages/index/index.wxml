@@ -1,22 +1,24 @@
 <!--index.wxml-->
 <view class='container'>
-  <view class="rowTitle">
+  <view class="titleIconView">
+    <image class="titleIconImage" src="../../images/tabs/bgindex.png"></image>
+  </view>
+  <!-- <view class="rowTitle">
     <view class="titleView">
-      <view class="titleText">E-Lottery
+      <view class="titleText">易摇号
       </view>
     </view>
     <view class="titleIconView">
-        <image class="titleIconImage" src="../../images/logo.png" style="width:70px" mode="widthFix"></image>
+        <image class="titleIconImage" src="../../images/logo1.png" style="width:70px" mode="widthFix"></image>
     </view>
-  </view>
+  </view> -->
   <view class="rowButton">
-    <button class="rowButtonItem" size="mini" bind:tap="onCreate">创建新摇号</button>
-    <button class="rowButtonItem" size="mini" bind:tap="onMyLot">查看已报名摇号</button>
-    <!-- <button class="" size="mini" bind:tap="onUpdate">刷新</button> -->
+    <button style="font-weight: normal" class="rowButtonItem" size="mini" bind:tap="onCreate">创建新摇号</button>
+    <button style="font-weight: normal" class="rowButtonItem" size="mini" bind:tap="onMyLot">查看已报名摇号</button>
   </view>
   <view class="list">
     <block wx:for="{{lotteries}}">
-      <view class='item' wx:key="{{item.ID}}" bindtap='onItem' data-item= "{{item}}" data-id="{{item.ID}}">
+      <view class='item' wx:key="{{item.ID}}" bindtap='onItem' data-item="{{item}}" data-id="{{item.ID}}">
         <!-- <view class='iconImageView'>
           <image class='iconImage' src="{{item.pic}}" mode = 'aspectFit'></image>
         </view> -->
@@ -24,7 +26,7 @@
           <text class='lotteryNameText'>{{item.fields.lotteryname}}</text>
         </view>
         <view class='founderView'>
-          <text class = 'founderText'>创建者：{{item.fields.founder}}</text>
+          <text class='founderText'>创建者：{{item.fields.founder}}</text>
         </view>
         <view class='stopTimeView'>
           <text class='stopTimeText'>截止时间：{{item.fields.stoptime}}</text>

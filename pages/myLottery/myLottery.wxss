@@ -7,6 +7,7 @@
   /* background-color: red; */
   position: absolute;
 }
+
 .item {
   width: 100%;
   height: 300rpx;
@@ -15,18 +16,19 @@
   border-bottom: 1px solid #dadada;
 }
 
-.lotteryNameView{
+.lotteryNameView {
   top: 70rpx;
   left: 90rpx;
   /* right: 130rpx; */
   height: 30rpx;
   position: absolute;
 }
+
 .lotteryNameText {
   color: rgb(32, 27, 27);
   font-size: 42rpx;
   white-space: nowrap;
-    text-overflow:ellipsis;
+  text-overflow: ellipsis;
 }
 
 .founderView {
@@ -37,15 +39,16 @@
   /* background-color: gray; */
   position: absolute;
 }
+
 .founderText {
   font-size: 30rpx;
   color: gray;
   display: block;
   /* line-height: 50rpx; */
-   overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-   /* -webkit-line-clamp:1;  */
+  /* -webkit-line-clamp:1;  */
 }
 
 .stopTimeView {
@@ -53,12 +56,13 @@
   height: 50rpx;
   left: 90rpx;
   right: 150rpx;
-  position:absolute;
+  position: absolute;
 }
+
 .stopTimeText {
   font-size: 25rpx;
   color: rgb(221, 185, 92);
-   overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }

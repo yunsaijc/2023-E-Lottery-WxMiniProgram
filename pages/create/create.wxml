@@ -1,23 +1,44 @@
 <!--pages/create/create.wxml-->
 <form bindsubmit="submit">
+  <view class="titleIconView">
+    <image class="titleIconImage" src="../../images/tabs/bgcreate.png"></image>
+  </view>
+
   <view class="formList">
     <view class="formItem">
-        <view class="label">摇号名</view>
-        <input class="input" type="text" id="lotteryName" name="lotteryName" placeholder="请输入摇号名"/>
+      <view class="label">摇号名</view>
+      <input class="input" type="text" id="lotteryName" name="lotteryName" placeholder="请输入摇号名" />
     </view>
     <view class="formItem">
-        <view class="label">发起人</view>
-        <input class="input" type="text" id="founder" name="founder" placeholder="请输入发起人"/>
+      <view class="label">发起人</view>
+      <input class="input" type="text" id="founder" name="founder" placeholder="请输入发起人" />
     </view>
     <picker class="formItem" mode="date" bindchange="dateChange" value="{{stopDate}}">
       <view class="label">截止日期</view>
-      <input class="input" id="stopDate" name="stopDate" value='{{stopDate}}' placeholder='选择截止日期'/>
+      <input class="input" id="stopDate" name="stopDate" value='{{stopDate}}' placeholder='选择截止日期' />
     </picker>
     <picker class="formItem" mode="time" bindchange="timeChange" value="{{stopTime}}">
       <view class="label">截止时间</view>
-      <input class="input" id="stopTime" name="stopTime" value='{{stopTime}}' placeholder='选择截止时间'/>
+      <input class="input" id="stopTime" name="stopTime" value='{{stopTime}}' placeholder='选择截止时间' />
     </picker>
   </view>
+
+  <view class="formList">
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/label1.png" mode="aspectFill"></image>
+    </view>
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/label2.png" mode="aspectFill"></image>
+    </view>
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/label3.png" mode="aspectFill"></image>
+    </view>
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/label4.png" mode="aspectFill"></image>
+    </view>
+  </view>
+
+
   <view class="rowButton">
     <button formType="submit" class="button">创建摇号
     </button>
