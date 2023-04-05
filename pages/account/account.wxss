@@ -33,7 +33,9 @@ page {
 }
 
 .greetLabel {
-  top: 500rpx;
+  top: 570rpx;
   left: 320rpx;
   position: absolute;
+  color: rgb(255, 255, 255);
+  font-weight: 600rpx;
 }

@@ -1,10 +1,8 @@
 /* pages/create/create.wxss */
 .picture {
-  width: 25px;
-  height: 25px;
-  /* width: 200rpx; */
+  width: 23px;
+  height: 23px;
   left: 100rpx;
-  /* right: 300rpx; */
   position: absolute;
 }
 
@@ -18,14 +16,14 @@
 
 .titleIconImage {
   width: 780rpx;
-  height: 1190rpx;
+  height: 1180rpx;
 }
 
 
 .formList {
   flex: column;
   width: 100%;
-  top: 552rpx;
+  top: 540rpx;
   position: absolute;
 }
 
@@ -59,8 +57,6 @@
 }
 
 inputView {
-  left: 380rpx;
-  position: absolute;
   font-size: 30rpx;
   color: rgb(192, 192, 192);
 }
@@ -72,27 +68,41 @@ inputView {
 }
 
 .warnView {
-  top: 820rpx;
-  left: 68rpx;
-  right: 50rpx;
+  top: 560rpx;
+  left: 40rpx;
+  right: 40rpx;
   height: 300rpx;
-  font-size: 30rpx;
+  font-size: 28rpx;
   color: rgb(151, 151, 151);
   width: auto;
   position: absolute;
 }
 
 .rowButton {
-  top: 970rpx;
+  top: 960rpx;
   height: 200rpx;
   left: 155rpx;
   width: auto;
-  /* position: absolute; */
 }
+.rowButton1 {
+  top: 960rpx;
+  height: 125rpx;
+  left: 155rpx;
+  width: auto;
+}
+
+.rowButton2 {
+  top: 960rpx;
+  height: 160rpx;
+  left: 155rpx;
+  width: auto;
+}
+
 
 .button {
   border-radius: 30px;
   margin: 20rpx;
+  /* height: ; */
   background-color: rgb(80, 180, 230);
   color: rgb(255, 255, 255);
   white-space: nowrap;
@@ -100,147 +110,63 @@ inputView {
   font-size: 45rpx;
   font-weight: 340;
 }
+.button1 {
+  height: 140rpx;
+  border-radius: 30px;
+  margin: 20rpx;
+  /* height: ; */
+  background-color: rgb(24, 54, 94);
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  box-shadow: 0px 5px 10px 0px rgb(24, 54, 94, 0.8);
+  font-size: 35rpx;
+  /* font-weight: 340rpx; */
+}
+
 
 /* components/popup/popup.wxss */
 .common{
   display: flex;
   align-items: center;
 }
-/* 隐藏滚动条 */
-::-webkit-scrollbar{
-  width: 4rpx;
-  height: 10rpx;
-  color: transparent;
-}
-.mk-click{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100%;
-  height: 100%;
-}
-.main-container{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100vw;
-  height: 100vh;
-  flex-direction: column;
-}
-.bg-mk{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(75, 74, 74, 0.5);
-  transition: opacity cubic-bezier(0, 1.05, 0.6, 1.01) .7s; 
-}
-.bg-mk-ac{
-  opacity: 1;
-}
-.header-container{
-  justify-content: space-between;
-  width: 670rpx;
-  margin-top: 30rpx;
-}
-button{
-  margin: 0;
-  padding: 20rpx 0;
-}
-/* 中间弹出 */
-.middle-modal-container{
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  width: 700rpx;
-  margin-top: 90rpx;
-  border-radius: 25rpx;
-  background-color: #fff;
-  transition: all 0.3s ease-in;
-}
-.middle-modal-ac{
-  transform: scale(1);
-}
-.middle-modal-un{
-  transform: scale(0);
-}
-.middle-modal-img{
-  width: 630rpx;
-  height: 300rpx;
-  margin: 25rpx 0;
-  border-radius: 25rpx;
-}
-.message{
-  width: 580rpx;
-  font-size: 30rpx;
-  color: #999999;
-  margin-top: 20rpx;
-}
-.btn-wrapper{
-  justify-content: space-between;
-  width: 600rpx;
-  margin: 80rpx 0 30rpx 0;
-}
-/* 右侧弹出 */
-.right-popup-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 350rpx;
-  height: 100vh;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  background-color: #fff;
-  transform: translateX(350rpx);
-  transition: transform cubic-bezier(0, 1.05, 0.6, 1.01) .3s;
-  border-radius: 30rpx 0 0 30rpx;
-  font-size: 80rpx;
-  font-weight: bolder;
-  color: red;
-}
-.right-popup-container-ac{
-  transform: translateX(0);
-}
 /* 底部弹出 */
 .bottom-modal-container{
-  position: absolute;
-  bottom: 0;
+  z-index: 100;
+  position: relative;
+  bottom: 4rpx;
+  top:200rpx;
   right: 0;
   left: 0;
+  height: 1200rpx;
   flex-direction: column;
   width: 100vw;
-  min-height: 650rpx;
-  background-color: #fff;
+  min-height: 700rpx;
+  background-color: rgb(80, 180, 230);
   transform: translateY(650rpx);
   border-radius: 30rpx 30rpx 0 0;
-  transition: transform cubic-bezier(0, 1.05, 0.6, 1.01) .3s;
+  /* transition: transform cubic-bezier(0, 1.05, 0.6, 1.01) .3s; */
 }
 .bottom-modal-container-ac{
   transform: translateY(0);
+  background-color: rgb(241, 241, 241);
+
 }
 .main-modal-content{
   flex-direction: column;
   justify-content: center;
   width: 680rpx;
-  height: 460rpx;
-  color: #666666;
+  height: 1200rpx;
+  color: #555555;
+  font-weight: 600;
   overflow: hidden;
   overflow-y: scroll;
+  z-index: inherit 100;
 }
+
 .list{
-  /* flex: none; */
   justify-content: space-between;
   width: 100%;
   font-size: 30rpx;
-  margin-top: 20rpx;
+  font-weight: 600rpx;
+  height: 135rpx;
 }
-
-

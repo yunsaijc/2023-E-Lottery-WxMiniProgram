@@ -22,6 +22,9 @@
         <!-- <view class='iconImageView'>
           <image class='iconImage' src="{{item.pic}}" mode = 'aspectFit'></image>
         </view> -->
+      <view class="formItem">
+        <image class="picture" src="../../images/tabs/item1.png" mode="aspectFill"></image>
+      </view>
         <view class='lotteryNameView'>
           <text class='lotteryNameText'>{{item.fields.lotteryname}}</text>
         </view>

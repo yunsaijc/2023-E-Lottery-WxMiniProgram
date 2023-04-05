@@ -1,67 +1,94 @@
 /* pages/myLottery/myLottery.wxss */
-
-.list {
-  width: 100%;
-  bottom: 0;
-  top: 50rpx;
-  /* background-color: red; */
-  position: absolute;
+page {
+  background-color: rgb(126,212,245);
 }
-
-.item {
-  width: 100%;
-  height: 300rpx;
-  position: relative;
-  /* background-color: green; */
-  border-bottom: 1px solid #dadada;
-}
-
-.lotteryNameView {
-  top: 70rpx;
-  left: 90rpx;
-  /* right: 130rpx; */
+.titleIconView {
+  top: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
   height: 30rpx;
   position: absolute;
 }
 
+.titleIconImage {
+  width: 750rpx;
+  height: 1200rpx;
+}
+.list {
+  width: 100%;
+  bottom: 0;
+  top: 180rpx;
+  /* background-color: red; */
+  position: absolute;
+}
+.item {
+ box-sizing:border-box;
+  height: 300rpx;
+  position: relative; 
+  background-color: rgb(255, 255, 255);
+  border-bottom: 7px solid rgb(13, 96, 129);
+  border-bottom-left-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+}
+
+.picture {
+  width: 25px;
+  height: 25px;
+  /* width: 200rpx; */
+  left: 30rpx;
+  top: 50rpx;
+  /* right: 300rpx; */
+  position: absolute;
+}
+
+.lotteryNameView {
+  top: 50rpx;
+  left: 120rpx;
+  /* right: 130rpx; */
+  height: 30rpx;
+  position: absolute;
+}
 .lotteryNameText {
-  color: rgb(32, 27, 27);
+  color: rgb(24，54，94);
   font-size: 42rpx;
+  font-weight: 600;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
 .founderView {
-  top: 120rpx;
+  top: 130rpx;
   height: 50rpx;
-  left: 90rpx;
+  left: 120rpx;
   /* right: 20rpx; */
   /* background-color: gray; */
   position: absolute;
 }
-
 .founderText {
   font-size: 30rpx;
-  color: gray;
+  color: rgb(148, 148, 148);
   display: block;
   /* line-height: 50rpx; */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   /* -webkit-line-clamp:1;  */
+  /* font-size: 33rpx; */
+  font-weight: 600;
 }
-
 .stopTimeView {
   top: 200rpx;
   height: 50rpx;
-  left: 90rpx;
+  left: 70rpx;
   right: 150rpx;
   position: absolute;
+  /* font-size: 35rpx; */
+  font-weight: 600;
 }
-
 .stopTimeText {
   font-size: 25rpx;
-  color: rgb(221, 185, 92);
+  color: rgb(24，54，94);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
