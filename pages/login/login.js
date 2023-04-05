@@ -65,22 +65,22 @@ Page({
   },
   register(){
     wx.request({
-      url: 'http://192.168.43.4:8000/api/register/',
+      url: app.globalData.targetURL + 'register/',
       method: "POST",
           header:{
             "content-type": "application/x-www-form-urlencoded"		//使用POST方法要带上这个header
           },
           data: {
-            username: this.username,
-            password: this.password,
+            username: this.data.username,
+            password: this.data.password,
           },
           success: res => {
-            if (res.errno == 0) {
-              console.log(res)
-              this.setData({
-                result: res.data	//服务器返回的结果 
-              })    
-            }
+            wx.showModal({
+              content: res.data.msg,
+              editable: false,
+              showCancel: false,
+              title: '提示'
+            })
           },
     })
   },
