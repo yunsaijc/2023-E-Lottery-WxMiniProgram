@@ -32,6 +32,9 @@
       <image class="picture" src="../../images/tabs/label1.png" mode="aspectFill"></image>
     </view>
     <view class="formItem">
+      <image class="picture" src="../../images/tabs/label5.png" mode="aspectFill"></image>
+    </view>
+    <view class="formItem">
       <image class="picture" src="../../images/tabs/label2.png" mode="aspectFill"></image>
     </view>
     <view class="formItem">

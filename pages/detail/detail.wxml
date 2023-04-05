@@ -6,40 +6,47 @@
   </view>
   <view class="formList">
     <view class="formItem">
+      <image class="picture" src="../../images/tabs/label1.png" mode="aspectFill"></image>
       <view class="label">摇号名</view>
       <view class="input">{{lot.fields.lotteryname}}</view>
     </view>
     <view class="formItem">
+      <image class="picture" src="../../images/tabs/label5.png" mode="aspectFill"></image>
       <view class="label">发起人</view>
       <view class="input">{{lot.fields.founder}}</view>
     </view>
     <view class="formItem">
+        <image class="picture" src="../../images/tabs/label2.png" mode="aspectFill"></image>
         <view class="label">结果数量</view>
         <view class="input">{{param.fields.result_num}}</view>
     </view>
     <picker class="formItem" mode="date" bindchange="dateChange" value="{{stopDate}}">
+      <image class="picture" src="../../images/tabs/label3.png" mode="aspectFill"></image>
       <view class="label">截止时间</view>
       <input class="input" value='{{lot.fields.stoptime}}' />
     </picker>
     <view class="formItem">
+        <image class="picture" src="../../images/tabs/label6.png" mode="aspectFill"></image>
         <view class="label">状态</view>
         <view class="input">{{statusText}}</view>
     </view>
     <view class="formItem" wx:if="{{signed}}">
+      <image class="picture" src="../../images/tabs/label8.png" mode="aspectFill"></image>
         <view class="label">号码牌</view>
         <view class="input">{{tmpId}}</view>
     </view>
     <view class="formItem" wx:if="{{signed && finished}}">
+        <image class="picture" src="../../images/tabs/label7.png" mode="aspectFill"></image>
         <view class="label">结果</view>
         <view class="input" wx:if="{{param.fields.y == -1}}">报名人数不足，摇号作废</view>
         <view class="input" wx:elif="{{result}}">抽中</view>
         <view class="input" wx:else="">未抽中</view>
     </view>
-    <view class="rowButton" wx:if="{{signed && finished}}">
+    <view class="rowButton1" wx:if="{{signed && finished}}">
       <button class="button" bindtap="pop">高级参数
       </button>
     </view>
-    <view class="rowButton" wx:if="{{signed && finished}}">
+    <view class="rowButton2" wx:if="{{signed && finished}}">
       <button bindtap="verify" class="button">验证结果
       </button>
     </view>
@@ -53,22 +60,7 @@
     </view>
   </view>
 
-  <view class="formListPic">
-    <view class="formItem">
-      <image class="picture" src="../../images/tabs/label1.png" mode="aspectFill"></image>
-    </view>
-    <view class="formItem">
-      <image class="picture" src="../../images/tabs/label2.png" mode="aspectFill"></image>
-    </view>
-    <view class="formItem">
-      <image class="picture" src="../../images/tabs/label3.png" mode="aspectFill"></image>
-    </view>>
-  </view>
 
-  <view class="rowButton">
-    <button formType="submit" class="button">返回主界面
-    </button>
-  </view>
 </form>
 
 <view wx:if="{{showPop}}" class="bottom-modal-container common {{showPop ?'bottom-modal-container-ac':''}}">
@@ -79,26 +71,31 @@
 		</view>
     <view class="main-modal-content common">
       <view class="list common">
-        <text>λ</text> <text>{{param.fields.lambdaa}}</text>
+        <text>λ</text> 
+        <text>{{param.fields.lambdaa}}</text>
       </view>
       <view class="list common">
-        <text>T</text> <text>{{param.fields.t}}</text>
+        <text>T</text> 
+        <text>{{param.fields.t}}</text>
       </view>
       <view class="list common">
-        <text>N</text> <text user-select="true">{{param.fields.n}}</text>
+        <text>N:</text> 
+        <text user-select="true">{{param.fields.n}}</text>
       </view>
       <view class="list common">
-        <text>p</text> <text user-select="true">{{param.fields.p}}</text>
+        <text>p:</text> 
+        <text user-select="true">{{param.fields.p}}</text>
       </view>
       <view class="list common">
-        <text>q</text> <text user-select="true">{{param.fields.q}}</text>
+        <text>q:</text> 
+        <text user-select="true">{{param.fields.q}}</text>
       </view>
       <view class="list common" wx:if="{{param.fields.y}} != -1">
-        <text>y</text> <text user-select="true">{{param.fields.y}}</text>
+        <text>y:</text> <text user-select="true">{{param.fields.y}}</text>
       </view>
-      <view class="list common" wx:if="{{param.fields.y}} != -1">
+      <!-- <view class="list common" wx:if="{{param.fields.y}} != -1">
         <text>π</text> <text user-select="true">{{param.fields.pi}}</text>
-      </view>
+      </view> -->
       <view class="list common" wx:if="{{param.fields.y}} != -1">
         <text>Merkle Root</text> <text user-select="true">{{param.fields.x_root}}</text>
       </view>
@@ -106,5 +103,13 @@
         <text>Merkle Path</text> <text>{{param.path}}</text>
       </view>
     </view>
-    <button type="primary" bindtap="unPop" style="margin-top:20rpx;height:65rpx;line-height:35rpx">确定</button>
+
+    <view class="main-modal-content common">
+      <view class="list common" wx:if="{{param.fields.y}} != -1">
+        <text>π</text> <text user-select="true">{{param.fields.pi}}</text>
+      </view>
+
+    </view>
+
+    <button bindtap="unPop" class="button1">确定</button>
 	</view>
