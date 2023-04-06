@@ -35,11 +35,12 @@ Page({
       url: app.globalData.targetURL + 'createlot/',
       method: 'POST',
       header:{
-        "content-type": "application/x-www-form-urlencoded"		//使用POST方法要带上这个header
+        "content-type": "application/x-www-form-urlencoded"
       },
       data :{
+        userId: app.globalData.userInfo,
         lotteryName: e.detail.value.lotteryName,
-        founder: e.detail.value.founder,
+        // founder: e.detail.value.founder,
         res_num: e.detail.value.res_num,
         stopTime: e.detail.value.stopDate + ' ' + e.detail.value.stopTime
       },

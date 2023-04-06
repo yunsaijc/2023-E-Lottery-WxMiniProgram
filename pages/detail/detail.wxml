@@ -42,6 +42,13 @@
         <view class="input" wx:elif="{{result}}">抽中</view>
         <view class="input" wx:else="">未抽中</view>
     </view>
+    <view class="formItem" wx:if="{{finished}}">
+        <image class="picture" src="../../images/tabs/label7.png" mode="aspectFill"></image>
+        <view class="label">所有抽中者</view>
+        <view class="input" wx:if="{{param.fields.y == -1}}">报名人数不足，摇号作废</view>
+        <!-- <view class="input" wx:elif="{{result}}">抽中</view> -->
+        <view class="input" wx:else="">{{allResult}}</view>
+    </view>
     <view class="rowButton1" wx:if="{{signed && finished}}">
       <button class="button" bindtap="pop">高级参数
       </button>

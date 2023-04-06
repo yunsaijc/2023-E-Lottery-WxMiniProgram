@@ -9,10 +9,10 @@
       <view class="label">摇号名</view>
       <input class="input" type="text" id="lotteryName" name="lotteryName" placeholder="请输入摇号名" />
     </view>
-    <view class="formItem">
+    <!-- <view class="formItem">
       <view class="label">发起人</view>
       <input class="input" type="text" id="founder" name="founder" placeholder="请输入发起人" />
-    </view>
+    </view> -->
     <view class="formItem">
         <view class="label">结果数量</view>
         <input class="input" type="text" id="res_num" name="res_num" placeholder="请输入结果数量"/>
@@ -40,9 +40,9 @@
     <view class="formItem">
       <image class="picture" src="../../images/tabs/label3.png" mode="aspectFill"></image>
     </view>
-    <view class="formItem">
+    <!-- <view class="formItem">
       <image class="picture" src="../../images/tabs/label4.png" mode="aspectFill"></image>
-    </view>
+    </view> -->
   </view>
 
 

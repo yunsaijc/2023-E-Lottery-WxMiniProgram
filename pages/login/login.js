@@ -64,24 +64,13 @@ Page({
     })
   },
   register(){
-    wx.request({
-      url: app.globalData.targetURL + 'register/',
-      method: "POST",
-          header:{
-            "content-type": "application/x-www-form-urlencoded"		//使用POST方法要带上这个header
-          },
-          data: {
-            username: this.data.username,
-            password: this.data.password,
-          },
-          success: res => {
-            wx.showModal({
-              content: res.data.msg,
-              editable: false,
-              showCancel: false,
-              title: '提示'
-            })
-          },
+    wx.navigateTo({
+      url: '../register/register',
+      success: (result) => {},
+      fail: (res) => {},
+      complete: (res) => {
+        // console.log(res)
+      },
     })
   },
 })

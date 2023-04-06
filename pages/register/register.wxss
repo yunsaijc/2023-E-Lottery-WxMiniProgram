@@ -1,0 +1,105 @@
+/* pages/register/register.wxss */
+.picture {
+  width: 25px;
+  height: 25px;
+  left: 100rpx;
+  position: absolute;
+}
+
+.titleIconView {
+  top: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  height: 30rpx;
+  position: absolute;
+  z-index: -1;
+}
+
+.titleIconImage {
+  width: 750rpx;
+  height: 1250rpx;
+}
+
+
+.formListPic {
+  flex: column;
+  width: 100%;
+  top: 410rpx;
+  position: absolute;
+  left: 10rpx;
+}
+
+.formItem {
+  height: 90rpx;
+  margin-bottom: 50rpx;
+}
+
+.section {
+  margin-top: 25%;
+}
+
+.page-section {
+  display: inline-block;
+  width: 380rpx;
+  height: 145rpx;
+  background-color: rgba(255, 255, 255, 0);
+  line-height: 90rpx;
+  margin: auto;
+  vertical-align: bottom;
+}
+
+
+.weui-cells__title {
+  position: absolute;
+  left: 190rpx;
+  font-size: 35rpx;
+  font-weight: 600;
+  color: rgb(24, 54, 94);
+}
+
+.weui-input {
+  position: absolute;
+  left: 300rpx;
+  margin-top: 3%;
+  margin-left: 10rpx;
+  vertical-align: baseline;
+  font-size: 30rpx;
+}
+
+.row {
+  top: 950rpx;
+  height: 120rpx;
+  left: 280rpx;
+  position: absolute;
+}
+
+.mini-btn {
+  border-radius: 30px;
+  margin: 20rpx;
+  width: 40rpx;
+  background-color: rgb(24, 54, 94);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3)
+}
+
+.get-tk-row {
+  top: 810rpx;
+  height: 120rpx;
+  width: 180rpx;
+  left: 490rpx;
+  position: absolute;
+}
+
+.get-tk-btn {
+  border-radius: 30px;
+  margin: 20rpx;
+  /* width: 40rpx; */
+  height: 70rpx;
+  background-color: rgb(24, 54, 94);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3)
+}
+
+.get-tk-text {
+  font-size: 25rpx;
+}

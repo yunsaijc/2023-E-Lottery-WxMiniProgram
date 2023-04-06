@@ -6,7 +6,9 @@
     "pages/logs/logs",
     "pages/create/create",
     "pages/myLottery/myLottery",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/register/register",
+    "pages/myCreate/myCreate"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -31,6 +33,12 @@
         "iconPath": "images/tabs/create-off.png",
         "selectedIconPath": "images/tabs/create-on.png",
         "text": "新建"
+      },
+      {
+        "pagePath": "pages/myCreate/myCreate",
+        "iconPath": "images/tabs/myCreate-off.png",
+        "selectedIconPath": "images/tabs/myCreate-on.png",
+        "text": "已创建"
       },
       {
         "pagePath": "pages/myLottery/myLottery",

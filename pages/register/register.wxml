@@ -1,0 +1,44 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+  <view class="titleIconView">
+    <image class="titleIconImage" src="../../images/tabs/bglogin.png">
+    </image>
+  </view>
+
+  <view class="section">
+    <view class="page-section">
+      <view class="weui-cells__title">用户名</view>
+      <input class="weui-input" type="number" placeholder="请输入您的用户名" bind:input="onUsername" />
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">密码</view>
+      <input class="weui-input" password type="text" placeholder="请输入您的密码" bind:input="onPassword" />
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">手机号</view>
+      <input class="weui-input" type="text" placeholder="请输入您的手机号" bind:input="onPhone" />
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">验证码</view>
+      <input class="weui-input" password type="text" placeholder="请输入验证码" bind:input="onToken" />
+      <view class="get-tk-row">
+        <button class="get-tk-btn" size="mini" bind:input="getToken">获取验证码</button>
+        <!-- <text class="get-tk-text"></text> -->
+      </view>
+    </view>
+  </view>
+
+  <view class="formListPic">
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/user.png" mode="aspectFill"></image>
+    </view>
+    <view class="formItem">
+      <image class="picture" src="../../images/tabs/passwd.png" mode="aspectFill"></image>
+    </view>
+  </view>
+
+  <view class="row">
+    <button class="mini-btn" size="mini" bind:tap="register">注册</button>
+    <!-- <button class="mini-btn" size="mini" bind:tap="login" bind>登录</button> -->
+  </view>
+</view>

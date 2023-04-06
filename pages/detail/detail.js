@@ -14,6 +14,7 @@ Page({
     finished: false,
     statusText: "",
     result: null,
+    allResult: null,
     showPop: false
   },
   submit() {
@@ -123,7 +124,8 @@ Page({
             tmpId: res.data.data[0].tmpId,
             signed: res.data.data[0].signed,
             finished: res.data.data[0].finished,
-            result: res.data.result
+            result: res.data.result,
+            allResult: res.data.allResult
           })
           console.log(res)
           var now = Date.now()
@@ -137,7 +139,7 @@ Page({
         }
       },
       complete: res => {
-        // console.log(res)
+        console.log(res)
       }
     })
   },
