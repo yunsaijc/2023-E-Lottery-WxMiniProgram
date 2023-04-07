@@ -3,6 +3,6 @@
   "projectname": "E-Lottery-WxMiniApp",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": false
+    "urlCheck": true
   }
 }
