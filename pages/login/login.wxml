@@ -26,7 +26,7 @@
   </view>
 
   <view class="row">
-    <button class="mini-btn" size="mini" bind:tap="register">注册</button>
+    <button class="mini-btn" size="mini" bind:tap="register">新用户请先注册</button>
     <button class="mini-btn" size="mini" bind:tap="login" bind>登录</button>
   </view>
 </view>

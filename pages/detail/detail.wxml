@@ -58,7 +58,7 @@
       </button>
     </view>
       <view class="warnView" wx:if="{{!signed && !finished}}">
-      <view class="warnLabel">点击报名后，请输入一个数字来参与到摇号中。若不输入，我们会为您生成一个随机输入。
+      <view class="warnLabel">点击报名后，请输入一个数字来参与到摇号中。若您选择不输入，我们会为您生成一个随机输入。
       </view>
     </view>
     <view class="rowButton"wx:if="{{!finished}}">
@@ -117,6 +117,5 @@
       </view>
 
     </view>
-
     <button bindtap="unPop" class="button1">确定</button>
 	</view>

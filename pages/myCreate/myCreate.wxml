@@ -1,7 +1,7 @@
 <!--pages/myCreate/myCreate.wxml-->
 <view class='container'>
   <view class="titleIconView">
-    <image class="titleIconImage" src="../../images/tabs/bgmylottery.png"></image>
+    <image class="titleIconImage" src="../../images/tabs/bgmycreate.png"></image>
   </view>
   <view class="list">
 

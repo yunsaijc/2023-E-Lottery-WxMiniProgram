@@ -1,4 +1,10 @@
 /**login.wxss**/
+
+page {
+  background-color: rgb(222,240,250);
+}
+
+
 .picture {
   width: 25px;
   height: 25px;
@@ -32,10 +38,12 @@
 .formItem {
   height: 90rpx;
   margin-bottom: 50rpx;
+  
 }
 
 .section {
   margin-top: 25%;
+  
 }
 
 .page-section {
@@ -55,28 +63,42 @@
   font-size: 35rpx;
   font-weight: 600;
   color: rgb(24, 54, 94);
+  
 }
 
 .weui-input {
   position: absolute;
-  left: 300rpx;
+  left: 315rpx;
   margin-top: 3%;
   margin-left: 10rpx;
   vertical-align: baseline;
-  font-size: 30rpx;
+  font-size: 28rpx;
+  height: 50rpx;
+  width: 350rpx;
+  background-color: rgb(247, 247, 247);
+  /* border-bottom: 7px solid rgb(13, 96, 129); */
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
 }
 
 .row {
   top: 650rpx;
-  height: 120rpx;
-  left: 200rpx;
+  height: 110rpx;
+  left: 160rpx;
   position: absolute;
+  /* width: max-content; */
 }
 
 .mini-btn {
   border-radius: 30px;
   margin: 20rpx;
   width: 40rpx;
+  height: 65rpx;
   background-color: rgb(24, 54, 94);
   color: rgb(255, 255, 255);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3)

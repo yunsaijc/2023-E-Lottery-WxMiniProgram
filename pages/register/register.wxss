@@ -1,4 +1,8 @@
 /* pages/register/register.wxss */
+page {
+  background-color: rgb(222,240,250);
+}
+
 .picture {
   width: 25px;
   height: 25px;
@@ -10,14 +14,14 @@
   top: 0rpx;
   left: 0rpx;
   right: 0rpx;
-  height: 30rpx;
+  /* height: 40rpx; */
   position: absolute;
   z-index: -1;
 }
 
 .titleIconImage {
   width: 750rpx;
-  height: 1250rpx;
+  height: 1220rpx;
 }
 
 
@@ -25,12 +29,13 @@
   flex: column;
   width: 100%;
   top: 410rpx;
+  /* height: 400rpx; */
   position: absolute;
-  left: 10rpx;
+  /* left: rpx; */
 }
 
 .formItem {
-  height: 90rpx;
+  height: 80rpx;
   margin-bottom: 50rpx;
 }
 
@@ -41,7 +46,7 @@
 .page-section {
   display: inline-block;
   width: 380rpx;
-  height: 145rpx;
+  height: 130rpx;
   background-color: rgba(255, 255, 255, 0);
   line-height: 90rpx;
   margin: auto;
@@ -51,7 +56,7 @@
 
 .weui-cells__title {
   position: absolute;
-  left: 190rpx;
+  left: 200rpx;
   font-size: 35rpx;
   font-weight: 600;
   color: rgb(24, 54, 94);
@@ -59,47 +64,61 @@
 
 .weui-input {
   position: absolute;
-  left: 300rpx;
+  left: 315rpx;
   margin-top: 3%;
   margin-left: 10rpx;
   vertical-align: baseline;
-  font-size: 30rpx;
+  font-size: 28rpx;
+  height: 50rpx;
+  width: 350rpx;
+  background-color: rgb(245, 245, 245);
+  /* border-bottom: 7px solid rgb(13, 96, 129); */
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
 }
 
 .row {
-  top: 950rpx;
-  height: 120rpx;
+  top: 900rpx;
+  /* height: 110rpx; */
   left: 280rpx;
   position: absolute;
 }
 
 .mini-btn {
+  top: 120rpx;
+  left: -73rpx;
   border-radius: 30px;
-  margin: 20rpx;
-  width: 40rpx;
+  /* margin: 25rpx; */
+  height: 90rpx;
+  font-size: 40rpx;
+  /* box-sizing: border-box; */
   background-color: rgb(24, 54, 94);
   color: rgb(255, 255, 255);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3)
+
 }
 
 .get-tk-row {
-  top: 810rpx;
-  height: 120rpx;
-  width: 180rpx;
-  left: 490rpx;
+  top: 793rpx;
+  height: 130rpx;
+  /* width: 200rpx; */
+  left: 65rpx;
   position: absolute;
 }
 
 .get-tk-btn {
-  border-radius: 30px;
-  margin: 20rpx;
+  border-radius: 10px;
+  /* margin: 20rpx; */
   /* width: 40rpx; */
-  height: 70rpx;
+  height: 65rpx;
+  /* font-size: 35rpx; */
   background-color: rgb(24, 54, 94);
-  color: rgb(255, 255, 255);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3)
+  color: rgb(228, 228, 228);
+  /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3) */
 }
 
-.get-tk-text {
-  font-size: 25rpx;
-}

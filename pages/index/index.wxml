@@ -13,12 +13,12 @@
     </view>
   </view> -->
   <view class="rowButton">
-    <button style="font-weight: normal" class="rowButtonItem" size="mini" bind:tap="onCreate">创建新摇号</button>
-    <button style="font-weight: normal" class="rowButtonItem" size="mini" bind:tap="onMyLot">查看已报名摇号</button>
+    <button  class="rowButtonItem" size="mini" bind:tap="onCreate">创建新摇号</button>
+    <button class="rowButtonItem" size="mini" bind:tap="onMyLot">查看已报名摇号</button>
   </view>
   <view class="weui-search-bar__box">
       <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-      <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容"/>
+      <input type="text" class="weui-search-bar__input" placeholder="请输入摇号名称"/>
   </view>
   <view class="list">
     <block wx:for="{{lotteries}}">

@@ -6,16 +6,16 @@ page {
 
 
 .picture {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   /* width: 200rpx; */
-  left: 100rpx;
+  left: 90rpx;
   /* right: 300rpx; */
   position: absolute;
 } 
 
 .titleIconView {
-  top: -112rpx;
+  top: -20rpx;
   left: 0rpx;
   right: 0rpx;
   height: 30rpx;
@@ -24,68 +24,31 @@ page {
 
 .titleIconImage {
   width: 750rpx;
-  height: 1200rpx;
+  height: 1340rpx;
 }
-
-/* 
-.rowTitle{
-  top: 105rpx;
-  height: 170rpx;
-  left: 140rpx;
-  bottom: 0;
-  position: absolute;
-}
-.titleView{
-  top: 400rpx;
-  left: 35rpx;
-  right: 200rpx;
-  height: 120rpx;
-  position: absolute;
-}
-.titleText {
-  color: rgb(255, 255, 255);
-  font-size: 130rpx;
-  font-weight: 400;
-  white-space: nowrap;
-  font-family:YouYuan;
-  text-shadow: 0px 0px 8px rgb(0, 0, 0);
-}
-.titleIconView{
-  top:-530rpx;
-  left: 150rpx;
-  right: 70rpx;
-  height: 20rpx;
-  position: absolute;
-}
-.titleIconImage {
-  top: 570rpx;
-  width: 500rpx;
-  height: 300rpx;
-  position: absolute;
-} */
 
 .rowButton {
-  top: 860rpx;
+  top: 1050rpx;
   height: 200rpx;
   position: absolute;
+  font-size: 45rpx;
 }
 
 .rowButtonItem {
   border-radius: 30px;
-  margin: 20rpx;
+  margin: 30rpx;
   background-color: rgba(255, 255, 255, 255);
   color: rgb(36, 80, 120, 0.6);
-  font-size: 20rpx;
-  white-space: nowrap;
-  font: weight 1;
-  /* text-overflow:ellipsis; */
+  font-weight: 400;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
 }
+
 
 .list {
   width: 100%;
   bottom: 0;
-  top: 1100rpx;
+  top: 1425rpx;
+  /* left: ; */
   /* background-color: red; */
   position: absolute;
 }
@@ -111,7 +74,7 @@ page {
 } 
 .lotteryNameView {
   top: 50rpx;
-  left: 120rpx;
+  left: 140rpx;
   /* right: 130rpx; */
   height: 30rpx;
   position: absolute;
@@ -126,7 +89,7 @@ page {
 .founderView {
   top: 130rpx;
   height: 50rpx;
-  left: 120rpx;
+  left: 140rpx;
   /* right: 20rpx; */
   /* background-color: gray; */
   position: absolute;
@@ -162,7 +125,7 @@ page {
 
 .weui-search-bar {
   position: relative;
-  padding: 8px 10px;
+  padding: 10px 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -180,24 +143,33 @@ page {
   position: relative;
   -webkit-box-flex: 1;
   -webkit-flex: auto;
-          flex: auto;
+  flex: auto;
   border-radius: 5px;
   background: #FFFFFF;
   border: 1rpx solid #E6E6EA;
 }
 .weui-search-bar__box {
-  top: 880rpx;
+  top: 1130rpx;
+  /* left: 10rpx;
+  right:10rpx; */
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;
   z-index: 1;
+  /* color: bisque; */
+  background-color: rgb(230, 230, 230);
+  /* border-bottom: 7px solid rgb(13, 96, 129); */
+  border-bottom-left-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
 }
 .weui-search-bar__input {
-  height: 28px;
-  line-height: 28px;
-  font-size: 14px;
+  height: 35px;
+  /* line-height:px; */
+  font-size: 16px;
 }
 .weui-search-bar__cancel-btn {
   margin-left: 10px;

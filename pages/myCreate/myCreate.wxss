@@ -12,7 +12,7 @@ page {
 
 .titleIconImage {
   width: 750rpx;
-  height: 1200rpx;
+  height: 1250rpx;
 }
 .list {
   width: 100%;
