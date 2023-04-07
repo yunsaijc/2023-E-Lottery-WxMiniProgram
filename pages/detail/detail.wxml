@@ -35,14 +35,14 @@
         <view class="label">号码牌</view>
         <view class="input">{{tmpId}}</view>
     </view>
-    <view class="formItem" wx:if="{{signed && finished}}">
+    <view class="formItem" wx:if="{{finished && signed}}">
         <image class="picture" src="../../images/tabs/label7.png" mode="aspectFill"></image>
         <view class="label">结果</view>
         <view class="input" wx:if="{{param.fields.y == -1}}">报名人数不足，摇号作废</view>
         <view class="input" wx:elif="{{result}}">抽中</view>
         <view class="input" wx:else="">未抽中</view>
     </view>
-    <view class="formItem" wx:if="{{finished}}">
+    <view class="formItem" wx:if="{{finished && owned}}">
         <image class="picture" src="../../images/tabs/label7.png" mode="aspectFill"></image>
         <view class="label">所有抽中者</view>
         <view class="input" wx:if="{{param.fields.y == -1}}">报名人数不足，摇号作废</view>
@@ -61,7 +61,7 @@
       <view class="warnLabel">点击报名后，请输入一个数字来参与到摇号中。若不输入，我们会为您生成一个随机输入。
       </view>
     </view>
-    <view class="rowButton"wx:if="{{!finished}}">
+    <view class="rowButton" wx:if="{{!finished}}">
       <button formType="submit" class="button">{{labelText}}
       </button>
     </view>

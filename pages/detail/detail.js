@@ -15,7 +15,8 @@ Page({
     statusText: "",
     result: null,
     allResult: null,
-    showPop: false
+    showPop: false,
+    owned: false
   },
   submit() {
     // console.log(app.globalData.userInfo)
@@ -136,6 +137,8 @@ Page({
           else if(this.data.signed){this.setData({statusText: "已报名"})}
           else if(!this.data.signed && (now < ddl)){this.setData({statusText: "接受报名中"})}
           else{this.setData({statusText: "报名结束"})}
+          if(this.data.lot.fields.founder==app.globalData.userName){this.setData({owned: true})}
+          else{this.setData({owned: false})}
         }
       },
       complete: res => {
