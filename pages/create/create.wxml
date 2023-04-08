@@ -15,15 +15,15 @@
     </view> -->
     <view class="formItem">
         <view class="label">结果数量</view>
-        <input class="input" type="text" id="res_num" name="res_num" placeholder="请输入结果数量"/>
+        <input class="input" type="number" id="res_num" name="res_num" placeholder="请输入结果数量"/>
     </view>
     <picker class="formItem" mode="date" bindchange="dateChange" value="{{stopDate}}">
       <view class="label">截止日期</view>
-      <input class="input" id="stopDate" name="stopDate" value='{{stopDate}}' placeholder='选择截止日期' />
+      <input class="input" id="stopDate" name="stopDate" value='{{stopDate}}' placeholder='选择截止日期' disabled='true'/>
     </picker>
     <picker class="formItem" mode="time" bindchange="timeChange" value="{{stopTime}}">
       <view class="label">截止时间</view>
-      <input class="input" id="stopTime" name="stopTime" value='{{stopTime}}' placeholder='选择截止时间' />
+      <input class="input" id="stopTime" name="stopTime" value='{{stopTime}}' placeholder='选择截止时间'  disabled='true'/>
     </picker>
   </view>
 

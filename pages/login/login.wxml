@@ -8,7 +8,7 @@
   <view class="section">
     <view class="page-section">
       <view class="weui-cells__title">用户名</view>
-      <input class="weui-input" type="number" placeholder="请输入您的用户名" bind:input="onUsername" />
+      <input class="weui-input" type="text" placeholder="请输入您的用户名" bind:input="onUsername" />
     </view>
     <view class="page-section">
       <view class="weui-cells__title">密码</view>

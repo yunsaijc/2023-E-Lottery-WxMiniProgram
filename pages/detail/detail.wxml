@@ -66,8 +66,6 @@
       </button>
     </view>
   </view>
-
-
 </form>
 
 <view wx:if="{{showPop}}" class="bottom-modal-container common {{showPop ?'bottom-modal-container-ac':''}}">

@@ -8,7 +8,7 @@
   <view class="section">
     <view class="page-section">
       <view class="weui-cells__title">用户名</view>
-      <input class="weui-input" type="number" placeholder="请输入您的用户名" bind:input="onUsername" />
+      <input class="weui-input" type="text" placeholder="请输入您的用户名" bind:input="onUsername" />
     </view>
     <view class="page-section">
       <view class="weui-cells__title">密码</view>
@@ -16,11 +16,11 @@
     </view>
     <view class="page-section">
       <view class="weui-cells__title">手机号</view>
-      <input class="weui-input" type="text" placeholder="请输入您的手机号" bind:input="onPhone" />
+      <input class="weui-input" type="number" placeholder="请输入您的手机号" bind:input="onPhone" />
     </view>
     <view class="page-section">
       <view class="weui-cells__title">验证码</view>
-      <input class="weui-input" password type="text" placeholder="请输入验证码" bind:input="onToken" />
+      <input class="weui-input" password type="number" placeholder="请输入验证码" bind:input="onToken" />
       <view class="get-tk-row">
         <button class="get-tk-btn" size="mini"  bind:input="getToken">点击获取验证码</button>
         <!-- <text class="get-tk-text"></text> -->
