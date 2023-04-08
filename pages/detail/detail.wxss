@@ -130,12 +130,12 @@ inputView {
 .common{
   display: flex;
   align-items: center;
-  color: rgb(241, 241, 241);
+  color: rgb(20, 19, 19);
 }
 /* 底部弹出 */
 .bottom-modal-container{
   z-index: 100;
-  position: relative;
+  position: absolute;
   bottom: 4rpx;
   top:200rpx;
   right: 0;
@@ -144,16 +144,14 @@ inputView {
   flex-direction: column;
   width: 100vw;
   min-height: 700rpx;
-  background-color: rgb(80, 180, 230);
+  background-color: #fff;
   transform: translateY(650rpx);
   border-radius: 30rpx 30rpx 0 0;
-  /* color: rgb(241, 241, 241); */
-  background-color: rgb(241, 241, 241);
+  /* background-color: rgb(241, 241, 241); */
   /* transition: transform cubic-bezier(0, 1.05, 0.6, 1.01) .3s; */
 }
 .bottom-modal-container-ac{
   transform: translateY(0);
-  /* background-color: rgb(241, 241, 241); */
 }
 .main-modal-content{
   flex-direction: column;
@@ -165,14 +163,16 @@ inputView {
   overflow: hidden;
   overflow-y: scroll;
   z-index: inherit 100;
-  background-color: rgb(241, 241, 241);
+  /* background-color: rgb(241, 241, 241); */
 }
-
 .list{
+  /* flex: none; */
   justify-content: space-between;
   width: 100%;
   font-size: 30rpx;
   font-weight: 600rpx;
   height: 135rpx;
-  background-color: rgb(241, 241, 241);
+  /* background-color: rgb(241, 241, 241); */
 }
+
+
