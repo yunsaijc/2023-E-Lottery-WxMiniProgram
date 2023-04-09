@@ -7,8 +7,8 @@
       <button bindtap="onLogin" class="rowButtonItem">登录/注册
       </button>
     </view>
-    <view class="greetLabel" wx:else="">
-      <view>Hi, {{username}}!
+    <view wx:else="">
+      <view class="greetLabel">Hi, {{username}}!
       </view>
     </view>
     <view class="rowButton" wx:if="{{isLogin}}">

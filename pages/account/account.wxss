@@ -35,8 +35,14 @@ page {
 }
 
 .greetLabel {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   top: 770rpx;
-  left: 320rpx;
+  /* left: 320rpx; */
+  left: 50%;
+  transform:translate(-50%,-50%);
   position: absolute;
   color: rgb(255, 255, 255);
   font-size: x-large;

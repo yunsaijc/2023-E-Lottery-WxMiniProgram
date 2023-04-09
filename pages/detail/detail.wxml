@@ -105,7 +105,7 @@
         <text>Merkle Root</text> <text user-select="true">{{param.fields.x_root}}</text>
       </view>
       <view class="list common" wx:if="{{param.fields.y}} != -1">
-        <text>Merkle Path</text> <text>{{param.path}}</text>
+        <text>Merkle Path</text> <text user-select="true">{{param.path}}</text>
       </view>
     </view>
 
